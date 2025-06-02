@@ -20,8 +20,7 @@ O objetivo principal é compreender o conceito de **threads** em Java e como ela
 
 A aplicação calcula o valor aproximado de π utilizando a seguinte série:
 
-![image](https://github.com/user-attachments/assets/d8e37307-1793-423a-89c5-ca40ff2fa8ff)
-
+![image](https://github.com/user-attachments/assets/abc908d8-3756-4314-9eb1-f4c968407691)
 
 ---
 
