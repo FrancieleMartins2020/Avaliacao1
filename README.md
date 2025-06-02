@@ -22,6 +22,8 @@ A aplicação calcula o valor aproximado de π utilizando a seguinte série:
 
 ![image]((https://github.com/FrancieleMartins2020/Avaliacao1/blob/main/Formula.png))
 
+<img width="171" alt="Formula" src="https://github.com/user-attachments/assets/43494449-2426-4ce0-92b1-f33b88ec1bcb" />
+![image](https://github.com/user-attachments/assets/20580d97-fa00-47c3-8953-9ad6ffc7f484)
 
 ---
 
