@@ -20,8 +20,7 @@ O objetivo principal é compreender o conceito de **threads** em Java e como ela
 
 A aplicação calcula o valor aproximado de π utilizando a seguinte série:
 
-
-![Fórmula da Série de Leibniz para cálculo de pi](./Formula.png)
+![Fórmula da Série de Leibniz para cálculo de pi](https://github.com/user-attachments/assets/15e486fa-fc2c-4e3f-b1f1-e75c0bc80be8)
 
 
 ---
