@@ -1,4 +1,4 @@
-Com base no conteúdo do PDF da avaliação da disciplina **Fundamentos de Programação Concorrente**, aqui está um modelo de `README.md` pronto para você usar no GitHub, estruturado de forma clara e objetiva:
+Com base no conteúdo do PDF da avaliação da disciplina **Fundamentos de Programação Concorrente**.
 
 ---
 
@@ -20,7 +20,9 @@ O objetivo principal é compreender o conceito de **threads** em Java e como ela
 
 A aplicação calcula o valor aproximado de π utilizando a seguinte série:
 
-![image](https://github.com/user-attachments/assets/abc908d8-3756-4314-9eb1-f4c968407691)
+![Formula série de Leibniz-Grégory](Avaliacao1/Avaliacao1
+/Formula.png)
+
 
 ---
 
@@ -41,19 +43,15 @@ Foram realizados testes com **1, 2, 4, 8 e 16 threads**, para até **10⁹ termo
 ```
 
 .
-├── serial/                      # Implementação serial (sem threads)
+├── ParaleloCalculoPi/                      # Implementação serial
 │   ├── Main.java
-│   └── SerialLeibniz.java
+│   └── ParaleloCalculoPi.java
 │
-├── paralelo-nao-compartilhado/ # Threads com objetos independentes
+├── SerialCalculoPi
 │   ├── Main.java
-│   └── ParaleloLeibniz.java
+│   └── SerialCalculoPi.java
 │
-├── paralelo-compartilhado/     # Threads compartilhando objeto com synchronized
-│   ├── Main.java
-│   └── ParaleloLeibnizShared.java
-│
-├── grafico.pdf                 # Gráfico de desempenho gerado
+├── Avaliacao 2025.pdf          # Pdf da avaliação
 └── README.md                   # Este arquivo
 
 ````
@@ -62,13 +60,12 @@ Foram realizados testes com **1, 2, 4, 8 e 16 threads**, para até **10⁹ termo
 
 ## 🧵 Versões Implementadas
 
-- **Serial**: cálculo realizado de forma sequencial, sem threads.
-- **Paralela (sem compartilhamento)**: cada thread tem seu próprio objeto e calcula uma parte da série.
-- **Paralela (com compartilhamento)**: todas as threads compartilham um objeto sincronizado com `synchronized`.
+- **Serial**.
+- **Paralela.
 
 ---
 
-## 📊 Gráfico de Desempenho
+## 📊 Log de Desempenho
 
 O arquivo `grafico.pdf` mostra o tempo de execução médio em função do número de threads utilizadas (1, 2, 4, 8, 16), para 10⁸ ou 10⁹ termos.
 
