@@ -1,15 +1,14 @@
-````markdown
+
 # Cálculo Paralelo de π com Threads em Java
 
 Este projeto foi desenvolvido para a disciplina **Fundamentos de Programação Concorrente** da UTFPR - Campus Toledo, como parte da **1ª Avaliação**.
 
 ## 🧠 Objetivo
 
-Compreender o conceito de **threads** e como utilizá-las para aproveitar melhor os recursos de processamento modernos. O programa implementa três versões distintas para calcular o valor de π usando a **série de Leibniz-Grégory**:
+Compreender o conceito de **threads** e como utilizá-las para aproveitar melhor os recursos de processamento modernos.
+O programa implementa três versões distintas para calcular o valor de π usando a **série de Leibniz-Grégory**:
 
-````
 ![image](https://github.com/user-attachments/assets/7c3a9179-0c30-41f3-b19e-81049923098a)
-
 
 ## 📌 Requisitos Atendidos
 
@@ -21,8 +20,6 @@ Compreender o conceito de **threads** e como utilizá-las para aproveitar melhor
 - ✅ Execução com 1, 2, 4, 8 e 16 threads
 - ✅ Cálculo do **tempo médio** e **desvio padrão** com 3 amostragens
 - ✅ Geração de gráfico comparativo
-
-
 
 ## 📊 Resultados de Execução
 
@@ -150,7 +147,7 @@ O gráfico abaixo compara os **tempos médios de execução** entre as 3 versõe
 
 ## 👨‍💻 Autor
 
-**Franciele Lemos Martins**
-RA: **1111183**
+Franciele Lemos Martins
+RA: 1111183
 Disciplina: Fundamentos de Programação Concorrente
-Professor: ** Edson Tavares de Camargo**
+Professor: Edson Tavares de Camargo
