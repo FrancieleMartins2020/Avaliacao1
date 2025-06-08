@@ -123,6 +123,15 @@ O gráfico abaixo compara os **tempos médios de execução** entre as 3 versõe
 
 ---
 
+## ⚙️ Tecnologias Utilizadas
+
+* **Java 17**
+* **Maven** (gerenciador de dependências)
+* **JFreeChart** (para geração de gráficos)
+* **Java Swing** (interface gráfica com JFrame/ChartPanel)
+
+---
+
 ## 📝 Instruções de Execução
 
 1. Compile os arquivos:
@@ -143,11 +152,12 @@ O gráfico abaixo compara os **tempos médios de execução** entre as 3 versõe
    java -cp ".;libs/jfreechart-1.5.3.jar;libs/jcommon-1.0.23.jar" Grafico.ComparadorPi
    ```
 
+
 ---
 
 ## 👨‍💻 Autor
 
-* Franciele Lemos Martins
-* RA: 1111183
-* Disciplina: Fundamentos de Programação Concorrente
-* Professor: Edson Tavares de Camargo
+* **Franciele Lemos Martins
+* **RA: 1111183
+* **Disciplina: Fundamentos de Programação Concorrente
+* **Professor: Edson Tavares de Camargo
