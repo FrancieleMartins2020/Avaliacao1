@@ -151,8 +151,6 @@ O gráfico abaixo compara os **tempos médios de execução** entre as 3 versõe
    ```bash
    java -cp ".;libs/jfreechart-1.5.3.jar;libs/jcommon-1.0.23.jar" Grafico.ComparadorPi
    ```
-
-
 ---
 
 ## 👨‍💻 Autor
@@ -161,3 +159,16 @@ O gráfico abaixo compara os **tempos médios de execução** entre as 3 versõe
 * **RA: 1111183**
 * **Disciplina: Fundamentos de Programação Concorrente**
 * **Professor: Edson Tavares de Camargo**
+
+---
+
+### 📚 Referências e Inspiração
+
+Este projeto foi desenvolvido com base em conceitos aprendidos em aula e também com apoio de estudos em repositórios públicos. 
+Agradecimentos aos autores das implementações a seguir, que serviram como referência:
+
+* 📌 [ufrn-concprog/pi-leibniz](https://github.com/ufrn-concprog/pi-leibniz/blob/master/src/SumAggregator.java): Referência para controle de soma e divisão de tarefas entre threads.
+* 📌 [Adam-Cr42/Calculo-de-pi-usando-threads---java](https://github.com/Adam-Cr42/Calculo-de-pi-usando-threads---java/blob/main/main.java): Exemplo de paralelismo aplicado à série de Leibniz.
+* 📌 [Lucasmtsoares/Thread-Com-Java](https://github.com/Lucasmtsoares/Thread-Com-Java): Referência geral para criação e controle de múltiplas threads em Java.
+
+As referências foram utilizadas apenas como apoio conceitual e a implementação entregue foi feita de forma autoral, conforme as diretrizes da avaliação.
