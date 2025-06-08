@@ -100,8 +100,9 @@ O gráfico abaixo compara os **tempos médios de execução** entre as 3 versõe
 * 🟢 **Paralelo sem compartilhamento**
 * 🟡 **Paralelo com compartilhamento sincronizado**
 
-**\![image](https://github.com/user-attachments/assets/355a5ba6-205e-42f9-9d61-344ae1c36b03)
-**
+![image](https://github.com/user-attachments/assets/83d44df4-dbb5-4ed5-a24a-927edd38e92a)
+
+
 ![image](https://github.com/user-attachments/assets/ed57aa6d-48c2-4c9c-bc93-47d0c08edab0)
 
 ---
@@ -149,7 +150,7 @@ O gráfico abaixo compara os **tempos médios de execução** entre as 3 versõe
 
 ## 👨‍💻 Autor
 
-**\Franciele Lemos Martins**
-RA: **\1111183**
+**Franciele Lemos Martins**
+RA: **1111183**
 Disciplina: Fundamentos de Programação Concorrente
-Professor: **\ Edson Tavares de Camargo**
+Professor: ** Edson Tavares de Camargo**
