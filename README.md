@@ -97,10 +97,9 @@ O gráfico abaixo compara os **tempos médios de execução** entre as 3 versõe
 * 🟢 **Paralelo sem compartilhamento**
 * 🟡 **Paralelo com compartilhamento sincronizado**
 
-![image](https://github.com/user-attachments/assets/9a6f280a-d3a5-4eaf-ab68-e97988d2a0fb)
+![image](https://github.com/user-attachments/assets/01509f8d-3e00-40ce-ae6f-a9daace1517a)
 
-![image](https://github.com/user-attachments/assets/8d129b99-6d4f-41e8-9cd2-40f12143b071)
-
+![image](https://github.com/user-attachments/assets/4b58448c-a376-461a-af9b-a5693b89f629)
 
 ---
 
