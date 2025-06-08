@@ -146,8 +146,9 @@ O gráfico abaixo compara os **tempos médios de execução** entre as 3 versõe
 ---
 
 ## 👨‍💻 Autor
-
+---
 Franciele Lemos Martins
 RA: 1111183
 Disciplina: Fundamentos de Programação Concorrente
 Professor: Edson Tavares de Camargo
+---
