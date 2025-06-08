@@ -7,9 +7,8 @@ Este projeto foi desenvolvido para a disciplina **Fundamentos de Programação C
 
 Compreender o conceito de **threads** e como utilizá-las para aproveitar melhor os recursos de processamento modernos. O programa implementa três versões distintas para calcular o valor de π usando a **série de Leibniz-Grégory**:
 
-\[
-\frac{π}{4} = 1 - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \frac{1}{9} - ...
-\]
+![image](https://github.com/user-attachments/assets/7c3a9179-0c30-41f3-b19e-81049923098a)
+
 
 ## 📌 Requisitos Atendidos
 
@@ -40,29 +39,29 @@ Desvio padrão: 363 ms
 ```text
 ==== Versão Paralelo sem objeto compartilhado ====
 ==== Threads: 1 ====
-Tempo médio: 3359 ms
-Valor aproximado de PI: 3.141592643589326
-Desvio padrão: 1 ms
+Tempo médio: 33527 ms
+Valor aproximado de PI: 3.1415926525880504
+Desvio padrão: 50 ms
 
 ==== Threads: 2 ====
-Tempo médio: 2359 ms
-Valor aproximado de PI: 3.1415926435902506
-Desvio padrão: 479 ms
+Tempo médio: 23195 ms
+Valor aproximado de PI: 3.141592652589258
+Desvio padrão: 4802 ms
 
 ==== Threads: 4 ====
-Tempo médio: 2499 ms
-Valor aproximado de PI: 3.141592643589817
-Desvio padrão: 350 ms
+Tempo médio: 23309 ms
+Valor aproximado de PI: 3.1415926525892104
+Desvio padrão: 1833 ms
 
 ==== Threads: 8 ====
-Tempo médio: 1936 ms
-Valor aproximado de PI: 3.1415926435898798
-Desvio padrão: 9 ms
+Tempo médio: 14742 ms
+Valor aproximado de PI: 3.141592652589324
+Desvio padrão: 1798 ms
 
 ==== Threads: 16 ====
-Tempo médio: 1109 ms
-Valor aproximado de PI: 3.141592643589896
-Desvio padrão: 8 ms
+Tempo médio: 11686 ms
+Valor aproximado de PI: 3.141592652590205
+Desvio padrão: 222 ms
 ```
 
 ### 🟡 Versão Paralela (Objeto Compartilhado e Sincronizado)
@@ -70,24 +69,24 @@ Desvio padrão: 8 ms
 ```text
 ==== Versão Paralelo com objeto compartilhado ====
 ==== Threads: 1 ====
-Tempo médio: 34641 ms
-Desvio padrão: 232 ms
+Tempo médio: 34624 ms
+Desvio padrão: 167 ms
 
 ==== Threads: 2 ====
-Tempo médio: 17389 ms
-Desvio padrão: 39 ms
+Tempo médio: 17426 ms
+Desvio padrão: 45 ms
 
 ==== Threads: 4 ====
-Tempo médio: 9039 ms
-Desvio padrão: 110 ms
+Tempo médio: 9175 ms
+Desvio padrão: 12 ms
 
 ==== Threads: 8 ====
-Tempo médio: 5454 ms
-Desvio padrão: 57 ms
+Tempo médio: 5645 ms
+Desvio padrão: 18 ms
 
 ==== Threads: 16 ====
-Tempo médio: 3464 ms
-Desvio padrão: 17 ms
+Tempo médio: 3790 ms
+Desvio padrão: 93 ms
 ```
 
 ---
@@ -100,10 +99,10 @@ O gráfico abaixo compara os **tempos médios de execução** entre as 3 versõe
 * 🟢 **Paralelo sem compartilhamento**
 * 🟡 **Paralelo com compartilhamento sincronizado**
 
-![image](https://github.com/user-attachments/assets/83d44df4-dbb5-4ed5-a24a-927edd38e92a)
+![image](https://github.com/user-attachments/assets/9a6f280a-d3a5-4eaf-ab68-e97988d2a0fb)
 
+![image](https://github.com/user-attachments/assets/8d129b99-6d4f-41e8-9cd2-40f12143b071)
 
-![image](https://github.com/user-attachments/assets/ed57aa6d-48c2-4c9c-bc93-47d0c08edab0)
 
 ---
 
