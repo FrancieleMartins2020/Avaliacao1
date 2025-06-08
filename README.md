@@ -7,6 +7,7 @@ Este projeto foi desenvolvido para a disciplina **Fundamentos de Programação C
 
 Compreender o conceito de **threads** e como utilizá-las para aproveitar melhor os recursos de processamento modernos. O programa implementa três versões distintas para calcular o valor de π usando a **série de Leibniz-Grégory**:
 
+````
 ![image](https://github.com/user-attachments/assets/7c3a9179-0c30-41f3-b19e-81049923098a)
 
 
@@ -21,7 +22,7 @@ Compreender o conceito de **threads** e como utilizá-las para aproveitar melhor
 - ✅ Cálculo do **tempo médio** e **desvio padrão** com 3 amostragens
 - ✅ Geração de gráfico comparativo
 
----
+
 
 ## 📊 Resultados de Execução
 
@@ -32,7 +33,7 @@ Compreender o conceito de **threads** e como utilizá-las para aproveitar melhor
 Tempo médio: 35088 ms
 Valor aproximado de PI: 3.1415926525880504
 Desvio padrão: 363 ms
-````
+```
 
 ### 🟢 Versão Paralela (Objeto Não Compartilhado)
 
