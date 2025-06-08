@@ -1,111 +1,155 @@
-Com base no conteúdo do PDF da avaliação da disciplina **Fundamentos de Programação Concorrente**.
+````markdown
+# Cálculo Paralelo de π com Threads em Java
+
+Este projeto foi desenvolvido para a disciplina **Fundamentos de Programação Concorrente** da UTFPR - Campus Toledo, como parte da **1ª Avaliação**.
+
+## 🧠 Objetivo
+
+Compreender o conceito de **threads** e como utilizá-las para aproveitar melhor os recursos de processamento modernos. O programa implementa três versões distintas para calcular o valor de π usando a **série de Leibniz-Grégory**:
+
+\[
+\frac{π}{4} = 1 - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \frac{1}{9} - ...
+\]
+
+## 📌 Requisitos Atendidos
+
+- ✅ Versão Serial
+- ✅ Versão Paralela com objeto **não compartilhado** entre as threads
+- ✅ Versão Paralela com objeto **compartilhado e sincronizado**
+- ✅ Cálculo com até **1 bilhão (10⁹)** de termos da série
+- ✅ Uso de `double` (precisão dupla)
+- ✅ Execução com 1, 2, 4, 8 e 16 threads
+- ✅ Cálculo do **tempo médio** e **desvio padrão** com 3 amostragens
+- ✅ Geração de gráfico comparativo
 
 ---
 
-```markdown
-# Cálculo de π com Threads em Java
+## 📊 Resultados de Execução
 
-Este repositório contém a implementação de um programa em Java para calcular o valor de π (Pi) utilizando a **série de Leibniz-Grégory**, com diferentes abordagens:
+### 🔵 Versão Serial
 
-- ✅ Versão **serial** 
-- ✅ Versão **paralela**
+```text
+==== Versão Serial ====
+Tempo médio: 35088 ms
+Valor aproximado de PI: 3.1415926525880504
+Desvio padrão: 363 ms
+````
 
-Este projeto foi desenvolvido como parte da **1ª Avaliação** da disciplina _Fundamentos de Programação Concorrente_ da **UTFPR – Campus Toledo**.
+### 🟢 Versão Paralela (Objeto Não Compartilhado)
 
----
+```text
+==== Versão Paralelo sem objeto compartilhado ====
+==== Threads: 1 ====
+Tempo médio: 3359 ms
+Valor aproximado de PI: 3.141592643589326
+Desvio padrão: 1 ms
 
-## 📌 Objetivo
+==== Threads: 2 ====
+Tempo médio: 2359 ms
+Valor aproximado de PI: 3.1415926435902506
+Desvio padrão: 479 ms
 
-O objetivo principal é compreender o conceito de **threads** em Java e como elas podem ser usadas para explorar o paralelismo em aplicações que realizam cálculos intensivos.
+==== Threads: 4 ====
+Tempo médio: 2499 ms
+Valor aproximado de PI: 3.141592643589817
+Desvio padrão: 350 ms
 
-A aplicação calcula o valor aproximado de π utilizando a seguinte série:
+==== Threads: 8 ====
+Tempo médio: 1936 ms
+Valor aproximado de PI: 3.1415926435898798
+Desvio padrão: 9 ms
 
-
----
-
-## 🧪 Cenários Experimentais
-
-Foram realizados testes com **1, 2, 4, 8 e 16 threads**, para até **10⁹ termos da série**, com os seguintes critérios:
-
-- Cada thread calcula uma **soma parcial** da série;
-- O tempo de execução é medido em milissegundos;
-- Para cada cenário, foram feitas **3 repetições**;
-- O programa calcula o **tempo médio** e o **desvio padrão** para cada quantidade de threads;
-- Os resultados são apresentados em console e documentados em **gráfico em PDF**.
-
----
-
-## 🗂 Estrutura do Projeto
-
+==== Threads: 16 ====
+Tempo médio: 1109 ms
+Valor aproximado de PI: 3.141592643589896
+Desvio padrão: 8 ms
 ```
 
-.
-├── ParaleloCalculoPi/                      # Implementação serial
+### 🟡 Versão Paralela (Objeto Compartilhado e Sincronizado)
+
+```text
+==== Versão Paralelo com objeto compartilhado ====
+==== Threads: 1 ====
+Tempo médio: 34641 ms
+Desvio padrão: 232 ms
+
+==== Threads: 2 ====
+Tempo médio: 17389 ms
+Desvio padrão: 39 ms
+
+==== Threads: 4 ====
+Tempo médio: 9039 ms
+Desvio padrão: 110 ms
+
+==== Threads: 8 ====
+Tempo médio: 5454 ms
+Desvio padrão: 57 ms
+
+==== Threads: 16 ====
+Tempo médio: 3464 ms
+Desvio padrão: 17 ms
+```
+
+---
+
+## 📈 Gráfico Comparativo
+
+O gráfico abaixo compara os **tempos médios de execução** entre as 3 versões:
+
+* 📘 **Serial**
+* 🟢 **Paralelo sem compartilhamento**
+* 🟡 **Paralelo com compartilhamento sincronizado**
+
+**\![image](https://github.com/user-attachments/assets/355a5ba6-205e-42f9-9d61-344ae1c36b03)
+**
+![image](https://github.com/user-attachments/assets/ed57aa6d-48c2-4c9c-bc93-47d0c08edab0)
+
+---
+
+## 📂 Estrutura do Projeto
+
+```
+├── SerialCalculoPi/
+│   └── Main.java
+├── ParaleloCalculoPi/
 │   ├── Main.java
 │   └── ParaleloCalculoPi.java
-│
-├── SerialCalculoPi
+├── ParaleloComObjCompartilhadoCalculoPi/
 │   ├── Main.java
-│   └── SerialCalculoPi.java
-│
-├── Avaliacao 2025.pdf          # Pdf da avaliação
-└── README.md                   # Este arquivo
-
-````
-
----
-
-## 🧵 Versões Implementadas
-
-- **Serial**.
-- **Paralela.
-
----
-
-## 📊 Log de Desempenho
-
-O arquivo `grafico.pdf` mostra o tempo de execução médio em função do número de threads utilizadas (1, 2, 4, 8, 16), para 10⁸ ou 10⁹ termos.
-
----
-
-## 🧑‍💻 Como Executar
-
-1. Compile os arquivos Java:
-
-```bash
-javac Main.java NomeDaClasseDeThread.java
-````
-
-2. Execute com o número desejado de threads (quando aplicável):
-
-```bash
-java Main
+│   ├── ParaleloComObjCompartilhadoCalculoPi.java
+│   └── SomaCompartilhada.java
+├── Grafico/
+│   └── GraficoComparativo.java
+├── README.md
 ```
 
 ---
 
-## 📃 Avaliação
+## 📝 Instruções de Execução
 
-Critérios observados:
+1. Compile os arquivos:
 
-* Sintaxe e semântica;
-* Organização e clareza do código;
-* Uso correto de tipos, classes e métodos;
-* Sincronização com `synchronized` nas versões compartilhadas;
-* Medição precisa de tempo com `System.currentTimeMillis()`;
-* Geração de gráfico com base nos tempos obtidos.
+   ```bash
+   javac -cp ".;libs/jfreechart-1.5.3.jar;libs/jcommon-1.0.23.jar" */*.java
+   ```
+
+2. Execute qualquer versão:
+
+   ```bash
+   java -cp ".;libs/jfreechart-1.5.3.jar;libs/jcommon-1.0.23.jar" ParaleloCalculoPi.Main
+   ```
+
+3. Para exibir o gráfico comparativo:
+
+   ```bash
+   java -cp ".;libs/jfreechart-1.5.3.jar;libs/jcommon-1.0.23.jar" Grafico.ComparadorPi
+   ```
 
 ---
 
-## 🧑‍🏫 Disciplina
+## 👨‍💻 Autor
 
-* **Nome**: Fundamentos de Programação Concorrente
-* **Professor**: 
-* **Universidade**: UTFPR – Campus Toledo
-* **Ano**: 2025
-
----
-
-## ⚠️ Aviso
-
-Este projeto foi desenvolvido exclusivamente para fins educacionais, como parte de uma avaliação individual. Cópias ou plágio são proibidos conforme as regras da disciplina.
+**\Franciele Lemos Martins**
+RA: **\1111183**
+Disciplina: Fundamentos de Programação Concorrente
+Professor: **\ Edson Tavares de Camargo**
