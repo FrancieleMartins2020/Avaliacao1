@@ -21,7 +21,8 @@ public class Main {
         for (int NumeroThreads : numThreadsArray) {
             long tempoTotal = 0;
             long[] tempoParcial = new long[amostragem];
-
+            double somaTotaldePI = 0;
+            
             for (int repeticoes = 0; repeticoes < amostragem; repeticoes++) {
                 SomaCompartilhada somaCompartilhada = new SomaCompartilhada();
                 Thread[] threads = new Thread[NumeroThreads];
@@ -41,6 +42,7 @@ public class Main {
                 long tempoFinal = System.currentTimeMillis();
                 tempoParcial[repeticoes] = tempoFinal - tempoInicial;
                 tempoTotal += tempoParcial[repeticoes];
+                somaTotaldePI = 4 * somaCompartilhada.getSoma();
             }
 
             long tempoMedio = tempoTotal / amostragem;
@@ -59,6 +61,7 @@ public class Main {
 
             System.out.println("==== Threads: " + NumeroThreads + " ====");
             System.out.println("Tempo médio: " + tempoMedio + " ms");
+            System.out.println("Valor aproximado de PI: " + somaTotaldePI);
             System.out.println("Desvio padrão: " + desvioPadrao + " ms");
             System.out.println();
         }
