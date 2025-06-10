@@ -104,7 +104,8 @@ O gráfico abaixo compara os **tempos médios de execução** entre as 3 versõe
 
 ![image](https://github.com/user-attachments/assets/01509f8d-3e00-40ce-ae6f-a9daace1517a)
 
-![image](https://github.com/user-attachments/assets/f2a8bb9f-c69d-47d9-a96b-978898d10a6b)
+![image](https://github.com/user-attachments/assets/9001f3c8-8791-4e47-b352-67c816f58723)
+
 
 
 ---
