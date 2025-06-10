@@ -67,24 +67,29 @@ Desvio padrão: 222 ms
 ```text
 ==== Versão Paralelo com objeto compartilhado ====
 ==== Threads: 1 ====
-Tempo médio: 34624 ms
-Desvio padrão: 167 ms
+Tempo médio: 33637 ms
+Valor aproximado de PI: 3.1415926525880504
+Desvio padrão: 89 ms
 
 ==== Threads: 2 ====
-Tempo médio: 17426 ms
-Desvio padrão: 45 ms
+Tempo médio: 16948 ms
+Valor aproximado de PI: 3.141592652589258
+Desvio padrão: 20 ms
 
 ==== Threads: 4 ====
-Tempo médio: 9175 ms
-Desvio padrão: 12 ms
+Tempo médio: 9440 ms
+Valor aproximado de PI: 3.14159265258921
+Desvio padrão: 189 ms
 
 ==== Threads: 8 ====
-Tempo médio: 5645 ms
-Desvio padrão: 18 ms
+Tempo médio: 7196 ms
+Valor aproximado de PI: 3.141592652589324
+Desvio padrão: 11 ms
 
 ==== Threads: 16 ====
-Tempo médio: 3790 ms
-Desvio padrão: 93 ms
+Tempo médio: 7250 ms
+Valor aproximado de PI: 3.141592652590205
+Desvio padrão: 22 ms
 ```
 
 ---
@@ -99,7 +104,8 @@ O gráfico abaixo compara os **tempos médios de execução** entre as 3 versõe
 
 ![image](https://github.com/user-attachments/assets/01509f8d-3e00-40ce-ae6f-a9daace1517a)
 
-![image](https://github.com/user-attachments/assets/4b58448c-a376-461a-af9b-a5693b89f629)
+![image](https://github.com/user-attachments/assets/f2a8bb9f-c69d-47d9-a96b-978898d10a6b)
+
 
 ---
 
